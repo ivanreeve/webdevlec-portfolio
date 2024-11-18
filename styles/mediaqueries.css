@@ -1,0 +1,38 @@
+@media screen and (min-width: 701px) {
+  #nav-btn-tray {
+    display: flex;
+  }
+  #nav-btn-icon {
+    display: none;
+  }
+  .pfp-container img {
+    width: 360px;
+    height: 450px;
+    border: 2px solid var(--color-black);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #nav-btn-tray {
+    display: none;
+  }
+  #nav-btn-icon {
+    display: flex;
+  }
+
+  .pfp-container img {
+    width: 320px;
+    height: 400px;
+    border: 2px solid var(--color-black);
+  }
+
+  /* Scrollbar Hiding */
+  html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+}
