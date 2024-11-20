@@ -10,6 +10,11 @@
     width: 320px;
     height: 320px;
   }
+
+  .about-collection {
+    flex-direction: row;
+    padding: 4rem 3rem;
+  }
 }
 
 /* Mobile */
@@ -24,6 +29,11 @@
   .pfp-container img {
     width: 270px;
     height: 270px;
+  }
+
+  .about-collection {
+    flex-direction: column;
+    padding: 4rem 1.5rem;
   }
 
   /* Scrollbar Hiding */
