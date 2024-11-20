@@ -13,7 +13,7 @@
   --color-red:#d20f39; 
 
   /* Element-specific colors */
-  --color-nav: #eff1f5aa;
+  --color-nav: #eff1f5cc;
   --color-shadow: #00000033;
 }
 
@@ -27,16 +27,14 @@
 * {
   margin: 0;
   padding: 0;
-  /* outline: 1px solid red !important; */
+  /* border: 1px solid red; */
 }
 
 /* Base Styles */
 body {
-  display: grid;
   font-family: "Inter", sans-serif;
   background-color: var(--color-white);
   color: var(--color-black);
-  place-items: center;
 }
 
 .hline {
@@ -59,6 +57,7 @@ a {
   color: black;
   text-decoration: none;
   font-family: "Nunito", sans-serif;
+  font-weight: bold;
 }
 
 a:hover {
@@ -75,9 +74,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem;
+  height: 50px;
+  padding: 0 1rem;
   background-color: var(--color-nav);
-  backdrop-filter: blur(5.5px);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid gray;
   position: sticky;
   top: 0;
@@ -249,7 +249,7 @@ nav {
 }
 
 .aboutme-container img, .blog-card img {
-  width: 100%;
+  width: 100vw;
   height: 50vw;
   object-fit: cover;
 }
