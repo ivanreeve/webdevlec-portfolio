@@ -16,10 +16,10 @@
         <div>
           <!-- insert personal logo here -->
           <ul class="nav-links">
-            <li><a href="#home" title="">Home</a></li>
-            <li><a href="#aboutme" title="My story">About</a></li>
-            <li><a href="#blog" title="Blog posts">Blog</a></li>
-            <li><a href="#contacts" title="Contacts list">Contacts</a></li>
+            <li><button class="nav-link" onclick="location.href='#home'; removeMenu()" title="Home">Home</button></li>
+            <li><button class="nav-link" onclick="location.href='#aboutme'; removeMenu()" title="My story">About</button></li>
+            <li><button class="nav-link" onclick="location.href='#blog'; removeMenu()" title="Blog posts">Blog</button></li>
+            <li><button class="nav-link" onclick="location.href='#contacts'; removeMenu()" title="Contacts list">Contacts</button></li>
           </ul>
         </div>
       </nav>
@@ -35,6 +35,7 @@
         </div>
         <ul class="nav-links" id="nav-menu">
           <li><b>TABLE OF CONTENTS</b></li>
+          <li><button class="nav-menu-link" onclick="location.href='#home'; removeMenu()" title="Home">&nbsp; Home</button></li>
           <li><button class="nav-menu-link" onclick="location.href='#aboutme'; removeMenu()" title="My story">🌟&nbsp; About</button></li>
           <li><button class="nav-menu-link" onclick="location.href='#blog'; removeMenu()" title="Blog posts">📑&nbsp; Blog</button></li>
           <li><button class="nav-menu-link" onclick="location.href='#contacts'; removeMenu()" title="Contacts list">💬&nbsp; Contacts</button></li>
@@ -97,15 +98,15 @@
           <button class="submit-btn" type="submit">Send Message</button>
         </form>
       </div>
+      <footer>
+        <p>
+          Copyright © 2024 Ivan Lopez. All Rights Reserved.
+        </p>
+        <p>
+          The source code is available on <a href="https://github.com/ivanreeve/webdevlab-blog"><b><u>Github</u></b></a>
+        </p>
+      </footer>
     </div>
-    <footer>
-      <p>
-        Copyright © 2024 Ivan Lopez. All Rights Reserved.
-      </p>
-      <p>
-        The source code is available on <a href="https://github.com/ivanreeve/webdevlab-blog"><b><u>Github</u></b></a>
-      </p>
-    </footer>
     <script src="./scripts/script.js"></script>
   </body>
 </html>

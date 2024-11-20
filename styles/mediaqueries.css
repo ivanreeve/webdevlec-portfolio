@@ -1,3 +1,4 @@
+/* Desktop */
 @media(width > 700px) {
   #nav-btn-tray {
     display: flex;
@@ -12,6 +13,7 @@
   }
 }
 
+/* Mobile */
 @media(width <= 700px) {
   #nav-btn-tray {
     display: none;
@@ -27,20 +29,20 @@
   }
 
   /* Scrollbar Hiding */
-  html {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
-  html::-webkit-scrollbar {
-    display: none;
-  }
+  /* html { */
+  /*   -ms-overflow-style: none; */
+  /*   scrollbar-width: none; */
+  /* } */
+  /*  */
+  /* html::-webkit-scrollbar { */
+  /*   display: none; */
+  /* } */
 }
 
 @media(width > 1000px){
   .wrapper {
     width: 1000px;
-    border: solid gray;
+    border: solid var(--color-gray1);
     border-width: 0 1px;
   }
 }
