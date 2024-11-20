@@ -14,7 +14,7 @@
 
   /* Element-specific colors */
   --color-nav: #181825cc;
-  --color-nav-btn: #1e1e2eee;
+  --color-nav-btn: #ffffff09;
   --color-shadow: #00000033;
 }
 
@@ -28,7 +28,7 @@
 * {
   margin: 0;
   padding: 0;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* Base Styles */
@@ -37,7 +37,11 @@ body {
   place-items: center;
   font-family: "Inter", sans-serif;
   background-color: var(--color-black);
-  color: var(--color-black);
+  color: var(--color-white);
+}
+
+.wrapper {
+  background-color: var(--color-black);
 }
 
 .hline {
@@ -45,11 +49,6 @@ body {
   height: 1px;
   background-color: var(--color-gray1);
   margin: 2rem 0;
-}
-
-/* Typography */
-h1 {
-  font-size: 30px;
 }
 
 p {
@@ -86,44 +85,51 @@ nav {
 
 .nav-links {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   list-style: none;
-  flex-grow: 0;
 }
 
 .nav-link {
+  color: var(--color-white);
   border-radius: 3px;
   border: none;
   background-color: transparent;
-  padding: 0.3rem 0.8rem;
+  padding: 0.3rem 0.5rem;
+  width: 5rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .nav-link:hover {
-  color: var(--color-blue);
   border-radius: 4px;
   border: none;
   background-color: var(--color-nav-btn);
-  padding: 0.3rem;
 }
 
 #nav-menu {
   display: flex;
   flex-direction: column;
   align-items: first baseline;
-  gap: 1rem;
-  margin: 1rem 1.5rem;
+  padding: 1rem 0;
+}
+
+#nav-menu span {
+  padding: 0 1rem;
 }
 
 .nav-menu-link {
+  text-align: left;
+  width: 100vw;
   background-color: transparent;
   border: none;
   color: inherit;
   font-size: inherit;
-  font-weight: bold;
+  padding: 0.3rem 1rem;
 }
 
 .nav-menu-link:hover {
-  color: var(--color-blue);
+  /* color: var(--color-blue); */
+  background-color: var(color-gray0);
 }
 
 #menu-btn {
@@ -162,7 +168,7 @@ nav {
   position: fixed;
   bottom: 0;
   width: 100vw;
-  height: 40vh;
+  height: 50vh;
   background-color: var(--color-black);
   border-radius: 12px 12px 0 0;
   z-index: 99999;
@@ -188,7 +194,7 @@ nav {
   width: 50px;
   height: 4px;
   margin: 1rem 0;
-  background-color: gray;
+  background-color: var(--color-gray1);
   border-radius: 2px;
 }
 
@@ -197,7 +203,29 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem 0;
+  margin: 2rem 0;
+}
+
+.pfp-container img {
+  border-radius: 50%;
+  object-fit: cover;
+  background: linear-gradient(45deg,var(--color-teal),var(--color-blue));
+  border: 2px solid transparent;
+}
+
+.pfp-container::after {
+  content: '';
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vw;
 }
 
 .profile-text {
@@ -208,13 +236,19 @@ nav {
 }
 
 .profile-name {
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .profile-subtitle {
   font-size: 1.2rem;
   color: gray;
+}
+
+#profile { 
+  display: flex;
+  flex-direction: row !important;
 }
 
 /* Social Links */
@@ -301,7 +335,7 @@ h2 {
 /* Misc */
 .name {
   color: transparent;
-  background: linear-gradient(45deg, var(--color-pink), var(--color-purple));
+  background: linear-gradient(45deg, var(--color-teal), var(--color-blue));
   background-clip: text;
   cursor: pointer;
 }
@@ -312,15 +346,19 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100px;
   font-size: 0.8rem;
+}
+
+footer span {
+  font-weight: bold;
+  color: var(--color-blue);
 }
 
 .contacts-container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 40px;
+  padding: 2rem;
   background-color: var(--color-gray0);
 }
 
@@ -337,14 +375,6 @@ form {
 
 label {
   font-weight: bold;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid var(--color-gray0);
-  border-radius: 2px;
-  background-color: var(--color-gray1);
 }
 
 .submit-btn {
