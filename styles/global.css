@@ -402,10 +402,10 @@ button:hover {
   background-color: var(--color-gray1);
 }
 
-#about {
+.sec {
   display: flex;
   flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 2rem;
   align-items: center;
   justify-content: center;
 }
