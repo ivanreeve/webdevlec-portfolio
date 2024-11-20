@@ -9,7 +9,7 @@
   --color-blue: #1e66f5;
   --color-pink: #ea76cb;
   --color-purple: #8839ef;
-  --color-teal: #65d3ff;
+  --color-teal: #94e2d5;
   --color-red:#d20f39; 
 
   /* Element-specific colors */
@@ -225,7 +225,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40vw;
+  height: 40rem;
 }
 
 .profile-text {
@@ -239,6 +239,9 @@ nav {
   font-size: 4rem;
   margin-bottom: 1rem;
   font-weight: bold;
+  color: transparent;
+  background: linear-gradient(45deg, var(--color-white), var(--color-gray1));
+  background-clip: text;
 }
 
 .profile-subtitle {
