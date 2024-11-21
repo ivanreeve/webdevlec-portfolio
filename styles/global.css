@@ -24,7 +24,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 /* Reset and Global Styles */
@@ -55,6 +55,10 @@ a {
   font-family: "Nunito", sans-serif;
   color: var(--color-white);
   cursor: pointer;
+}
+
+button {
+  font-family: "Nunito";
 }
 
 a:hover {
@@ -284,30 +288,29 @@ nav {
 
 .social-btn-icon {
   fill: var(--color-gray0);
+  transition: fill 0.5s ease;
 }
 
 #github:hover {
   border-radius: 50%;
-  fill: var(--color-purple);
-  box-shadow: 0 0 10px var(--color-purple);
+  fill: var(--color-white);
 }
 
 #linkedin:hover {
-  border-radius: 20%;
-  fill: var(--color-teal);
-  box-shadow: 0 0 10px var(--color-teal);
+  fill: var(--color-white);
 }
 
 #yt:hover {
-  fill: var(--color-red);
-  border: 1px solid red;
-  box-shadow: 0 0 10px var(--color-red);
+  fill: var(--color-white);
 }
 
 #fb:hover {
-  border-radius: 5%;
-  fill: var(--color-blue);
-  box-shadow: 0 0 10px var(--color-blue);
+  fill: var(--color-white);
+  border-radius: 4px;
+}
+
+.repo__btn__logo {
+  fill: var(--color-white);
 }
 
 /* Misc */
@@ -362,7 +365,7 @@ footer span {
   font-weight: bold;
 }
 
-.contact__desc {
+.margin-bottom-1 {
   margin-bottom: 1rem;
 }
 
@@ -386,7 +389,7 @@ footer span {
 }
 
 .contact__form label {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   margin: 0.4rem 0;
 }
 
@@ -400,6 +403,10 @@ footer span {
   font-size: 0.7rem;
 }
 
+.contact__form input:focus {
+  outline: 1px solid var(--color-blue);
+}
+
 .contact__form textarea {
   border-radius: 2px;
   height: 100px;
@@ -409,6 +416,11 @@ footer span {
   color: var(--color-white);
   font-size: 0.7rem;
   margin-bottom: 1rem;
+  font-family: "Inter";
+}
+
+.contact__form textarea:focus {
+  outline: 1px solid var(--color-blue);
 }
 
 .contact__form form div {
@@ -453,7 +465,6 @@ button:hover {
   gap: 1rem;
   flex-wrap: wrap;
   align-items: stretch;
-
 }
 
 .sec__content > * {
@@ -487,7 +498,7 @@ button:hover {
 }
 
 .sec__desc {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   overflow-x: hidden;
   text-overflow: ellipsis;
 }
@@ -495,7 +506,7 @@ button:hover {
 .sec__subtitle {
   font-size: 0.8rem;
   width: 90%;
-  margin: 1rem 0;
+  margin-top: 1rem;
 }
 
 .proj-card {
@@ -508,7 +519,7 @@ button:hover {
   text-align: center;
   max-width: 40%;
   padding: 0.7rem;
-  font-size: calc(0.4rem + 0.6vw);
+  font-size: calc(0.7rem + 0.1vw);
   border-radius: 4px;
   font-weight: bold;
   color: var(--color-white);
@@ -532,39 +543,37 @@ button:hover {
 }
 
 .proj__tag {
-  padding: 0.4rem;
+  padding: 0.2rem;
   font-size: small;
   border-radius: 4px;
   font-weight: bold;
+  font-family: "Nunito";
+  border-width: 1px;
+  border-style: solid;
 }
 
 .webdev {
   color: var(--color-purple);
   background-color: #8839ef20;
-  border: 1px solid var(--color-purple);
+  border-color: var(--color-purple);
 }
 
 .js {
   color: var(--color-yellow);
   background-color: #f9e2af20;
-  border: 1px solid var(--color-yellow);
+  border-color: var(--color-yellow);
 }
 
 .cpp {
   color: #fab387;
   background-color: #fab38720;
-  border: 1px solid #fab387;
+  border-color: #fab387;
 }
 
 .gamedev {
   color: var(--color-teal);
   background-color: #94e2d520;
-  border: 1px solid var(--color-teal);
-}
-
-.proj-tag {
-  font-family: Nunito;
-  margin-bottom: 1rem;
+  border-color: var(--color-teal);
 }
 
 .contact__cta {
