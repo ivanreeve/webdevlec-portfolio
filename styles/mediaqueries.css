@@ -11,7 +11,7 @@
     height: 320px;
   }
 
-  .about-collection {
+  .sec__content {
     flex-direction: row;
     padding: 4rem 3rem;
   }
@@ -31,7 +31,7 @@
     height: 270px;
   }
 
-  .about-collection {
+  .sec__content {
     flex-direction: column;
     padding: 4rem 1.5rem;
   }

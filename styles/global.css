@@ -262,16 +262,15 @@ nav {
 }
 
 /* Social Links */
-.social-container {
+.social__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  margin: 2rem 0;
+  gap: 1rem;
 }
 
 .social-btn-icon {
-  fill: var(--color-black);
+  fill: var(--color-gray0);
 }
 
 #github:hover {
@@ -298,50 +297,6 @@ nav {
   box-shadow: 0 0 10px var(--color-blue);
 }
 
-/* About Section */
-.aboutme-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  text-align: justify;
-  gap: 3rem;
-}
-
-.aboutme-container img {
-  width: 100%;
-  height: 50%;
-  object-fit: cover;
-}
-
-h1 {
-  margin: 1rem 0;
-  text-align: center;
-}
-
-h2 {
-  margin: 1rem 0;
-}
-
-.aboutme-content p {
-  font-family: "Nunito", sans-serif;
-  margin: 0.5rem 1.5rem;
-}
-
-/* Specialization Section */
-.specialization-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1vw;
-  margin: 3rem 0;
-  font-family: "Nunito", sans-serif;
-}
-
-.blog-content {
-  margin: 1rem;
-}
-
 /* Misc */
 .name {
   color: transparent;
@@ -357,6 +312,7 @@ footer {
   align-items: center;
   justify-content: center;
   font-size: 0.8rem;
+  padding-top: 2rem;
 }
 
 footer span {
@@ -364,17 +320,19 @@ footer span {
   color: var(--color-blue);
 }
 
-.contacts-container {
+.contact__container {
+  height: auto;
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: var(--color-gray0);
+  justify-content: end;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 30px;
+.contact__form {
+  width: 50%;
+  height: auto;
+  margin: 1rem;
+  background-color: var(--color-gray0);
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 form {
@@ -402,7 +360,7 @@ button:hover {
   background-color: var(--color-gray1);
 }
 
-.sec {
+.sec__container {
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
@@ -410,25 +368,35 @@ button:hover {
   justify-content: center;
 }
 
-.about-collection {
+.sec__content {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: auto;
   gap: 3rem;
 }
 
-.about-card {
+.sec__card {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+  height: 500px;
 }
 
-.about-card img {
+.sec__card img {
   width: 100%;
   border-radius: 8px;
 }
 
-.about-title {
+.proj-card {
+  background-color: var(--color-gray0);
+  border-radius: 12px;
+  border: 2px solid var(--color-gray1);
+  margin-bottom: 2rem;
+}
+
+.sec__title {
   font-weight: bold;
   font-size: large;
   margin: 1rem 0;
