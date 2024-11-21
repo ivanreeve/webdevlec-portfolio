@@ -10,7 +10,9 @@
     width: 320px;
     height: 320px;
   }
-
+  .contact__form {
+    width: 50%;
+  }
   .sec__content {
     flex-direction: row;
     padding: 4rem 3rem;
@@ -25,12 +27,13 @@
   #nav-btn-icon {
     display: flex;
   }
-
   .pfp-container img {
     width: 270px;
     height: 270px;
   }
-
+  .contact__form {
+    width: 100%;
+  }
   .sec__content {
     flex-direction: column;
     padding: 4rem 1.5rem;
