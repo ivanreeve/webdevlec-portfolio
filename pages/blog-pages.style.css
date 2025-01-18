@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --color-black: #11111b;
+  --color-gray0: #1e1e2e;
+  --color-blue: #1e66f5;
+  --color-custom-white: #a6adc8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: white;
+  background-color: var(--color-black);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: var(--color-gray0);
+  border: 1px solid var(--color-blue);
+  border-radius: 6px;
+  color: var(--color-blue);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 32px;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: var(--color-blue);
+  color: var(--color-black);
+  transform: translateX(-4px);
+}
+
+.article {
+  background-color: var(--color-gray0);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* New styles for the image */
+.article img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 24px 0;
+}
+
+.article-meta {
+  font-size: 14px;
+  color: var(--color-blue);
+  margin-bottom: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.article-title {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.article-subtitle {
+  font-size: 1.25em;
+  color: var(--color-custom-white);
+  margin-bottom: 32px;
+  font-weight: 400;
+}
+
+.article-content p {
+  margin-bottom: 24px;
+  font-size: 1.1em;
+  color: var(--color-custom-white);
+}
+
+.article-content h2 {
+  font-size: 1.75em;
+  margin: 40px 0 20px;
+  color: white;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+  margin: 40px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .article {
+    padding: 24px;
+  }
+
+  .article-title {
+    font-size: 2em;
+  }
+
+  /* Adjusted image styles for mobile */
+  .article img {
+    max-height: 300px;
+  }
+}

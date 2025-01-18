@@ -11,7 +11,7 @@
   --color-pink: #ea76cb;
   --color-purple: #8839ef;
   --color-teal: #94e2d5;
-  --color-red:#d20f39; 
+  --color-red: #d20f39;
   --color-yellow: #f9e2af;
 
   /* Element-specific colors */
@@ -210,7 +210,7 @@ nav {
 .pfp-container img {
   border-radius: 50%;
   object-fit: cover;
-  background: linear-gradient(45deg,var(--color-teal),var(--color-blue));
+  background: linear-gradient(45deg, var(--color-teal), var(--color-blue));
   border: 2px solid transparent;
 }
 
@@ -222,11 +222,59 @@ nav {
 }
 
 #home {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 40rem;
+  background: linear-gradient(300deg,
+      #11111b,
+      #1e1e2e,
+      #1e66f5,
+      #6c7086,
+      #04a5e5,
+      #7287fd,
+      #1e1e2e,
+      #11111b);
+  animation: gradient 15s ease infinite;
+  background-size: 200% 200%;
+  /* This is important */
+}
+
+#home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-nav);
+  backdrop-filter: blur(20px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  25% {
+    background-position: 50% 50%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  75% {
+    background-position: 50% 50%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 .profile-text {
@@ -234,6 +282,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
 .logo {
@@ -245,7 +294,7 @@ nav {
 }
 
 .profile-name {
-  font-size: clamp(2rem,10vw,4rem);
+  font-size: clamp(2rem, 10vw, 4rem);
   margin-bottom: 1rem;
   font-weight: bold;
   color: var(--color-white);
@@ -273,7 +322,7 @@ nav {
   color: gray;
 }
 
-#profile { 
+#profile {
   display: flex;
   flex-direction: row !important;
 }
@@ -345,22 +394,20 @@ footer span {
   display: flex;
   justify-content: end;
   padding: 2rem 0;
-  background-image: linear-gradient(
-    180deg,
-    hsl(240deg 23% 9%) 23%,
-    hsl(233deg 32% 13%) 49%,
-    hsl(231deg 39% 16%) 64%,
-    hsl(229deg 44% 20%) 74%,
-    hsl(228deg 49% 24%) 81%,
-    hsl(226deg 53% 28%) 87%,
-    hsl(225deg 57% 32%) 92%,
-    hsl(224deg 61% 36%) 95%,
-    hsl(223deg 64% 39%) 97%,
-    hsl(222deg 68% 43%) 99%,
-    hsl(221deg 71% 47%) 100%,
-    hsl(221deg 76% 50%) 100%,
-    hsl(220deg 91% 54%) 100%
-  );
+  background-image: linear-gradient(180deg,
+      hsl(240deg 23% 9%) 23%,
+      hsl(233deg 32% 13%) 49%,
+      hsl(231deg 39% 16%) 64%,
+      hsl(229deg 44% 20%) 74%,
+      hsl(228deg 49% 24%) 81%,
+      hsl(226deg 53% 28%) 87%,
+      hsl(225deg 57% 32%) 92%,
+      hsl(224deg 61% 36%) 95%,
+      hsl(223deg 64% 39%) 97%,
+      hsl(222deg 68% 43%) 99%,
+      hsl(221deg 71% 47%) 100%,
+      hsl(221deg 76% 50%) 100%,
+      hsl(220deg 91% 54%) 100%);
   flex-direction: row;
 }
 
@@ -471,7 +518,7 @@ button:hover {
   align-items: stretch;
 }
 
-.sec__content > * {
+.sec__content>* {
   width: 45%;
   min-width: 45%;
 }
@@ -592,7 +639,7 @@ button:hover {
   font-size: 2.5rem;
 }
 
-#ParticleCanvas{
+#ParticleCanvas {
   border: 1px solid white;
   position: absolute;
   top: 0;
