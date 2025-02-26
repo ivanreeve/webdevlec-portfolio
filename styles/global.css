@@ -612,6 +612,12 @@ button:hover {
   border-color: var(--color-purple);
 }
 
+.config {
+  color: var(--color-red);
+  background-color: #ef393920;
+  border-color: var(--color-red);
+}
+
 .js {
   color: var(--color-yellow);
   background-color: #f9e2af20;
