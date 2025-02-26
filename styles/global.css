@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 :root {
   /* Colors */
@@ -215,7 +215,7 @@ nav {
 }
 
 .pfp-container::after {
-  content: '';
+  content: "";
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -228,22 +228,24 @@ nav {
   justify-content: center;
   align-items: center;
   height: 40rem;
-  background: linear-gradient(300deg,
-      #11111b,
-      #1e1e2e,
-      #1e66f5,
-      #6c7086,
-      #04a5e5,
-      #7287fd,
-      #1e1e2e,
-      #11111b);
+  background: linear-gradient(
+    300deg,
+    #11111b,
+    #1e1e2e,
+    #1e66f5,
+    #6c7086,
+    #04a5e5,
+    #7287fd,
+    #1e1e2e,
+    #11111b
+  );
   animation: gradient 15s ease infinite;
   background-size: 200% 200%;
   /* This is important */
 }
 
 #home::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -394,20 +396,22 @@ footer span {
   display: flex;
   justify-content: end;
   padding: 2rem 0;
-  background-image: linear-gradient(180deg,
-      hsl(240deg 23% 9%) 23%,
-      hsl(233deg 32% 13%) 49%,
-      hsl(231deg 39% 16%) 64%,
-      hsl(229deg 44% 20%) 74%,
-      hsl(228deg 49% 24%) 81%,
-      hsl(226deg 53% 28%) 87%,
-      hsl(225deg 57% 32%) 92%,
-      hsl(224deg 61% 36%) 95%,
-      hsl(223deg 64% 39%) 97%,
-      hsl(222deg 68% 43%) 99%,
-      hsl(221deg 71% 47%) 100%,
-      hsl(221deg 76% 50%) 100%,
-      hsl(220deg 91% 54%) 100%);
+  background-image: linear-gradient(
+    180deg,
+    hsl(240deg 23% 9%) 23%,
+    hsl(233deg 32% 13%) 49%,
+    hsl(231deg 39% 16%) 64%,
+    hsl(229deg 44% 20%) 74%,
+    hsl(228deg 49% 24%) 81%,
+    hsl(226deg 53% 28%) 87%,
+    hsl(225deg 57% 32%) 92%,
+    hsl(224deg 61% 36%) 95%,
+    hsl(223deg 64% 39%) 97%,
+    hsl(222deg 68% 43%) 99%,
+    hsl(221deg 71% 47%) 100%,
+    hsl(221deg 76% 50%) 100%,
+    hsl(220deg 91% 54%) 100%
+  );
   flex-direction: row;
 }
 
@@ -518,7 +522,7 @@ button:hover {
   align-items: stretch;
 }
 
-.sec__content>* {
+.sec__content > * {
   width: 45%;
   min-width: 45%;
 }
